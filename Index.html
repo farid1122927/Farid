@@ -1,123 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Global Bazaar Links - Your trusted Amazon affiliate site for global shopping.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover top Amazon deals from all categories – Electronics, Home, Fashion, and more. Click and buy with our global affiliate links.">
+  <meta name="keywords" content="Amazon, affiliate, deals, shopping, electronics, fashion, home, kitchen">
+  <meta name="author" content="Global Bazaar Links">
   <title>Global Bazaar Links</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f9f9f9;
+      padding: 0;
+      background-color: #f4f4f4;
       color: #333;
     }
-
-    header {
-      background-color: #0073e6;
-      padding: 1rem;
+    header, footer {
+      background-color: #222;
       color: white;
+      padding: 1rem;
       text-align: center;
     }
-
-    nav {
-      text-align: center;
-      margin: 1rem 0;
-    }
-
-    nav input {
-      padding: 0.5rem;
-      width: 60%;
-      max-width: 400px;
-    }
-
     main {
       padding: 2rem;
-      text-align: center;
+      max-width: 800px;
+      margin: auto;
     }
-
-    .copy-section {
-      margin-top: 2rem;
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 20px;
     }
-
-    .link-box {
-      display: inline-block;
-      background: white;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .link-box input {
-      width: 250px;
-      padding: 0.5rem;
-      margin-right: 0.5rem;
-    }
-
-    .link-box button {
-      padding: 0.5rem 1rem;
-      background-color: #28a745;
+    .btn-copy {
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
       border: none;
-      color: white;
       cursor: pointer;
-      border-radius: 4px;
     }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
+    .product-box {
+      border: 1px solid #ccc;
+      background-color: white;
+      margin: 1rem 0;
       padding: 1rem;
-      margin-top: 3rem;
+      border-radius: 10px;
     }
-
-    @media (max-width: 600px) {
-      nav input {
-        width: 90%;
-      }
-      .link-box input {
-        width: 70%;
-      }
+    .product-box h3 {
+      margin-top: 0;
+    }
+    .product-box a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #ff9900;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Global Bazaar Links</h1>
-    <p>Worldwide Amazon Products, Delivered Globally!</p>
-  </header>
+  </header>  <main>
+    <input type="text" id="siteUrl" value="https://farid11229.github.io/Farid" readonly>
+    <button class="btn-copy" onclick="copyLink()">Copy Website Link</button><h2>Featured Amazon Products</h2>
 
-  <nav>
-    <input type="text" placeholder="Search products..." />
-  </nav>
+<div class="product-box">
+  <h3>Wireless Bluetooth Earbuds</h3>
+  <p>High-quality sound, long battery life, and perfect for everyday use.</p>
+  <a href="https://www.amazon.com/dp/B09XXXXXXX?tag=youraffid">Buy on Amazon</a>
+</div>
 
-  <main>
-    <h2>Welcome to Your Affiliate Marketing Hub</h2>
-    <p>Explore top products from Amazon available in Pakistan and around the world.</p>
+<div class="product-box">
+  <h3>Smart LED Light Bulb</h3>
+  <p>Control with your phone or Alexa. Set schedules and create moods.</p>
+  <a href="https://www.amazon.com/dp/B08YYYYYYY?tag=youraffid">Buy on Amazon</a>
+</div>
 
-    <div class="copy-section">
-      <h3>Share This Website</h3>
-      <div class="link-box">
-        <input type="text" value="https://farid11229.github.io/Farid" id="myLink" readonly>
-        <button onclick="copyLink()">Copy Link</button>
-      </div>
-    </div>
-  </main>
+<div class="product-box">
+  <h3>Non-stick Cookware Set</h3>
+  <p>Premium kitchen set with heat-resistant handles and dishwasher safe.</p>
+  <a href="https://www.amazon.com/dp/B07ZZZZZZZ?tag=youraffid">Buy on Amazon</a>
+</div>
 
-  <footer>
-    <p>&copy; 2025 Global Bazaar Links | <a href="#" style="color: #ddd;">Affiliate Disclaimer</a></p>
-  </footer>
-
-  <script>
+  </main>  <footer>
+    <p>&copy; 2025 Global Bazaar Links | All rights reserved.</p>
+  </footer>  <script>
     function copyLink() {
-      var copyText = document.getElementById("myLink");
+      const copyText = document.getElementById("siteUrl");
       copyText.select();
       copyText.setSelectionRange(0, 99999);
       document.execCommand("copy");
-      alert("Link copied: " + copyText.value);
+      alert("Copied: " + copyText.value);
     }
-  </script>
-
-</body>
+  </script></body>
 </html>
